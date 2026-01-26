@@ -64,6 +64,32 @@
     "image_full": "/images/Sinner/ariel-mugshot.png",
     "rank": "A"
   },
+   {
+    "name": "Ark",
+    "code": "557",
+    "alignment": "Love",
+    "tendency": "Fury",
+    "height": "154cm",
+    "birthplace": "Other",
+    "birthday": "October 27",
+    "release date": "38",
+    "image": "/images/Sinner/ark-icon.png",
+    "image_full": "/images/Sinner/ark-mugshot.png",
+    "rank": "A"
+  },
+  {
+    "name": "Augustus",
+    "code": "005",
+    "alignment": "War",
+    "tendency": "Reticle",
+    "height": "175cm",
+    "birthplace": "Other",
+    "birthday": "July 14",
+    "release date": "37",
+    "image": "/images/Sinner/augustus-icon.png",
+    "image_full": "/images/Sinner/augustus-mugshot.png",
+    "rank": "S"
+  },
   {
     "name": "Bai Yi",
     "code": "027",
@@ -128,6 +154,19 @@
     "image": "/images/Sinner/cassian-icon.png",
     "image_full": "/images/Sinner/cassian-mugshot.png",
     "rank": "A"
+  },
+  {
+    "name": "Ceto",
+    "code": "118",
+    "alignment": "War",
+    "tendency": "Umbra",
+    "height": "173cm",
+    "birthplace": "Other",
+    "birthday": "December 27",
+    "release date": "38",
+    "image": "/images/Sinner/ceto-icon.png",
+    "image_full": "/images/Sinner/ceto-mugshot.png",
+    "rank": "S"
   },
   {
     "name": "Chameleon",
@@ -572,6 +611,19 @@
     "rank": "S"
   },
   {
+    "name": "Hilda",
+    "code": "035",
+    "alignment": "Sequester",
+    "tendency": "Arcane",
+    "height": "168cm",
+    "birthplace": "Other",
+    "birthday": "December 10",
+    "release date": "39",
+    "image": "/images/Sinner/hilda-icon.png",
+    "image_full": "/images/Sinner/hilda-mugshot.png",
+    "rank": "S"
+  },
+  {
     "name": "Horo",
     "code": "186",
     "alignment": "Anger",
@@ -1001,6 +1053,19 @@
     "rank": "A"
   },
   {
+    "name": "Necresta Hella",
+    "code": "098",
+    "alignment": "Famine",
+    "tendency": "Umbra",
+    "height": "152cm",
+    "birthplace": "Syndicate",
+    "birthday": "December 2",
+    "release date": "37",
+    "image": "/images/Sinner/necrestahella-icon.png",
+    "image_full": "/images/Sinner/necrestahella-mugshot.png",
+    "rank": "S"
+  },
+  {
     "name": "NOX",
     "code": "NOX",
     "alignment": "Limbo",
@@ -1300,6 +1365,19 @@
     "rank": "A"
   },
   {
+    "name": "Siglinde",
+    "code": "627",
+    "alignment": "War",
+    "tendency": "Endura",
+    "height": "165cm",
+    "birthplace": "Other",
+    "birthday": "July 12",
+    "release date": "37",
+    "image": "/images/Sinner/siglinde-icon.png",
+    "image_full": "/images/Sinner/siglinde-mugshot.png",
+    "rank": "A"
+  },
+  {
     "name": "Stargazer",
     "code": "023",
     "alignment": "Heresy",
@@ -1338,6 +1416,19 @@
     "image_full": "/images/Sinner/summer-mugshot.png",
     "rank": "S"
   },
+    {
+    "name": "Synex",
+    "code": "136",
+    "alignment": "Famine",
+    "tendency": "Fury",
+    "height": "167cm",
+    "birthplace": "Other",
+    "birthday": "January 16",
+    "release date": "36",
+    "image": "/images/Sinner/synex-icon.png",
+    "image_full": "/images/Sinner/synex-mugshot.png",
+    "rank": "S"
+  },
   {
     "name": "Tetra",
     "code": "071",
@@ -1349,6 +1440,19 @@
     "release date": "1",
     "image": "/images/Sinner/tetra-icon.png",
     "image_full": "/images/Sinner/tetra-mugshot.png",
+    "rank": "A"
+  },
+  {
+    "name": "Thani",
+    "code": "978",
+    "alignment": "Famine",
+    "tendency": "Arcane",
+    "height": "158cm",
+    "birthplace": "Other",
+    "birthday": "February 7",
+    "release date": "36",
+    "image": "/images/Sinner/thani-icon.png",
+    "image_full": "/images/Sinner/thani-mugshot.png",
     "rank": "A"
   },
     {
