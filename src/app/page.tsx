@@ -53,8 +53,8 @@ export default function Home() {
 
     const loaded_target = getSeededCharacter(current_seed);
 
-    const is_game_won = isGameWon(loaded_game.data.guesses, loaded_target.code);
-    const is_game_over = isGameOver(loaded_game.data.guesses, loaded_target.code);
+    const is_game_won = isGameWon(loaded_game.data.guesses, loaded_target.name);
+    const is_game_over = isGameOver(loaded_game.data.guesses, loaded_target.name);
     const legacy_guesses = getLegacyGuessesFromNames(loaded_game.data.guesses, current_seed);
 
     const filtered_characters = getCharacterListWithoutGuesses(loaded_game.data.guesses);
@@ -86,7 +86,7 @@ export default function Home() {
       updateScores(loaded_game);
       setImageSrc(loaded_target.image_full);
     } else if (hasGameStarted(loaded_game.data.guesses)) {
-      const last_character_code = loaded_game.data.guesses[loaded_game.data.guesses.length - 1];
+      const last_character_name = loaded_game.data.guesses[loaded_game.data.guesses.length - 1];
       const last_character_guessed = getCharacterFromName(last_character_code);
       setImageSrc(last_character_guessed.image_full)
     } else { // game has not started yet, so we aren't going to show anything
