@@ -2,8 +2,8 @@
 import '@/styles/Container.css'
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Character, Attribute, AvailableGames, APP_VERSION } from "@/types";
-import { getSeededCharacter, calculateThresholds, getCharacterFromCode } from "@/lib/CharacterUtils";
-import { getUTCDate, isGameWon, isGameOver, getLegacyGuessesFromCodes, getCharacterListWithoutGuesses, hasGameStarted, createEndlessResetValue, updateEndlessMode } from "@/lib/GameUtils";
+import { getSeededCharacter, calculateThresholds, getCharacterFromName } from "@/lib/CharacterUtils";
+import { getUTCDate, isGameWon, isGameOver, getLegacyGuessesFromNames, getCharacterListWithoutGuesses, hasGameStarted, createEndlessResetValue, updateEndlessMode } from "@/lib/GameUtils";
 import { saveGame, loadGame, getLastPlayedGame, updateScores, createNewDailyGame, switchMostRecentGame, setDebugValue, getDebugValue } from "@/lib/SaveUtils";
 import GameController from "@/components/Game/GameController";
 import GuessTable from "@/components/Table/GuessTable";
@@ -55,7 +55,7 @@ export default function Home() {
 
     const is_game_won = isGameWon(loaded_game.data.guesses, loaded_target.code);
     const is_game_over = isGameOver(loaded_game.data.guesses, loaded_target.code);
-    const legacy_guesses = getLegacyGuessesFromCodes(loaded_game.data.guesses, current_seed);
+    const legacy_guesses = getLegacyGuessesFromNames(loaded_game.data.guesses, current_seed);
 
     const filtered_characters = getCharacterListWithoutGuesses(loaded_game.data.guesses);
 
@@ -87,7 +87,7 @@ export default function Home() {
       setImageSrc(loaded_target.image_full);
     } else if (hasGameStarted(loaded_game.data.guesses)) {
       const last_character_code = loaded_game.data.guesses[loaded_game.data.guesses.length - 1];
-      const last_character_guessed = getCharacterFromCode(last_character_code);
+      const last_character_guessed = getCharacterFromName(last_character_code);
       setImageSrc(last_character_guessed.image_full)
     } else { // game has not started yet, so we aren't going to show anything
       setImageSrc("");
