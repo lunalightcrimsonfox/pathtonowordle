@@ -87,7 +87,7 @@ export default function Home() {
       setImageSrc(loaded_target.image_full);
     } else if (hasGameStarted(loaded_game.data.guesses)) {
       const last_character_name = loaded_game.data.guesses[loaded_game.data.guesses.length - 1];
-      const last_character_guessed = getCharacterFromName(last_character_code);
+      const last_character_guessed = getCharacterFromName(last_character_name);
       setImageSrc(last_character_guessed.image_full)
     } else { // game has not started yet, so we aren't going to show anything
       setImageSrc("");
