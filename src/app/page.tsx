@@ -116,7 +116,7 @@ export default function Home() {
 	  const game_to_load = getLastPlayedGame();
 	  const loaded_game = game_to_load === "ptndle" ? createNewDailyGame(game_to_load) : loadGame(game_to_load);
 
-      loaded_game.data.guesses.push(character.code)
+      loaded_game.data.guesses.push(character.name)
 
       const history_date = current_game.current === "ptndle_endless" ? saveSeed : getUTCDate()
       loaded_game.history[history_date] = loaded_game.data.guesses
